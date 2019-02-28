@@ -10,6 +10,7 @@ import './index.scss';
 
 import AppComponent from './app.component';
 // import routes from './index.route';
+import NotificationService from './services/NotificationService';
 
 angular.module('main', [
   ngMaterial,
@@ -17,6 +18,7 @@ angular.module('main', [
   materialIcon,
   ngAnimate,
 ])
+  .service('NotificationService', NotificationService)
   .component('app', AppComponent)
   // .config(['$stateProvider', routes])
   .run();

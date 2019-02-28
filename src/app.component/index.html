@@ -1,2 +1,10 @@
-Test
+<div id="page1">
+  <input type="text" ng-model="$ctrl.name">
+  <button ng-click='$ctrl.login()' id="loginBtn">Login</button>
+</div>
 <!-- <div class="view-container" ui-view></div> -->
+<div id="page2" style="display: none">
+  <button ng-click="$ctrl.logout()">Logout</button>
+</div>
+
+<div id='notification-message'></div>
